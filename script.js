@@ -30,7 +30,7 @@ hhOpen.addEventListener("click", (event) => {
 
 // Kick
 const audioKick = new Audio("./sounds/kick.wav");
-const kick = document.querySelector("div:nth-of-type(7)");
+const kick = document.querySelector("div:nth-of-type(4)");
 
 kick.addEventListener("click", (event) => {
   play(audioKick);
@@ -38,7 +38,7 @@ kick.addEventListener("click", (event) => {
 
 // Ride
 const audioRide = new Audio("./sounds/ride.wav");
-const ride = document.querySelector("div:nth-of-type(8)");
+const ride = document.querySelector("div:nth-of-type(5)");
 
 ride.addEventListener("click", (event) => {
   play(audioRide);
@@ -54,7 +54,7 @@ snare.addEventListener("click", (event) => {
 
 // Tom High
 const audioTomHigh = new Audio("./sounds/tom-high.wav");
-const tomHigh = document.querySelector("div:nth-of-type(4)");
+const tomHigh = document.querySelector("div:nth-of-type(7)");
 
 tomHigh.addEventListener("click", (event) => {
   play(audioTomHigh);
@@ -62,7 +62,7 @@ tomHigh.addEventListener("click", (event) => {
 
 // Tom Mid
 const audioTomMid = new Audio("./sounds/tom-mid.wav");
-const tomMid = document.querySelector("div:nth-of-type(5)");
+const tomMid = document.querySelector("div:nth-of-type(8)");
 
 tomMid.addEventListener("click", (event) => {
   play(audioTomMid);
@@ -109,8 +109,9 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+// Set Timeout para retardar el sonido
 function play(sound) {
   setTimeout(() => {
     sound.play();
-  }, 125);
+  }, 150);
 }

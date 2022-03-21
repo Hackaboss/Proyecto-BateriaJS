@@ -2,38 +2,44 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-  </style>
 }
 
 /* VERSIÓN MÓVIL */
 
-body{
+body {
+  background-color: rgb(182, 216, 233);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-  background-color: #dce6eb;
 }
 
-
+/*HEADER*/
 header {
-  height: 5rem;
-  background-color: #285468;
+  background-color: rgb(40, 84, 104);
+  height: 6rem;
   color: white;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
-  
 }
 
-
-h1 {
-font-family: Play, sans-serif;
+header h1 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  font-family: "Bungee", cursive;
 }
 
-main {
+header img {
+  width: 5rem;
+  height: 5rem;
+  padding-left: 1.5rem;
+}
+
+section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,162 +47,159 @@ main {
   padding: 2rem;
 }
 
+/* DIVS */
+
+kbd {
+  font-size: 1.5rem;
+  font-family: "Bungee", cursive;
+}
+
+button {
+  background-color: transparent;
+  font-family: "Bungee", cursive;
+  border-radius: 5%;
+  color: rgb(40, 84, 104);
+  height: 3rem;
+  width: 5rem;
+  border: 4px solid rgb(40, 84, 104);
+  margin-top: 2rem;
+}
+
+button:hover {
+  background: rgb(40, 84, 104);
+  box-shadow: 0 0 80px rgb(40, 84, 104);
+  color: white;
+}
+
 div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-div p {
-  text-align: center;
-  color: #285468;
-  font-family: Play, sans-serif;
-  font-size: 0.85rem;
-}
-
-footer {
-  height: 2rem;
-  background-color: #285468;
-  color: white;
-  display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  font-size: 0.65rem;
-  font-family: Play, sans-serif;
+  padding-top: 4rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: rgb(40, 84, 104);
+  color: white;
+  margin-bottom: 3.5rem;
+}
+
+div img {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*FOOTER*/
+footer {
+  background: rgb(40, 84, 104);
+  padding: 0.75rem;
+  color: white;
+  font-size: 0.8rem;
+  font-family: sans-serif;
 }
 
 /* VERSIÓN ESCRITORIO */
 
-
-
-@media (min-width: 150px) {
-  
-  body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    min-width: 200px;
-    background-color: #dce6eb;
-  }
-  
-  
-  header {
-    height: 6rem;
-    background-color: #285468;
-    color: white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 1rem;
-    
-  }
-  
-  
-  h1 {
-  font-family: Play, sans-serif;
-  font-size: 1.5rem;
-}
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  
-  div p {
-    text-align: center;
-    color: #285468;
-    font-family: Play, sans-serif;
-    font-size: 0.85rem;
-  }
-  
-  footer {
-    height: 2rem;
-    background-color: #285468;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.65rem;
-    font-family: Play, sans-serif;
-  }
-}
-
-
-
-
 @media (min-width: 600px) {
-
-  body{
+  body {
+    background-color: rgb(182, 216, 233);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    min-width: 200px;
-    background-color: #dce6eb;
   }
-  
-  
+
+  /*HEADER*/
   header {
-    height: 6rem;
-    background-color: #285468;
+    background-color: rgb(40, 84, 104);
+    height: 10rem;
     color: white;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap: 3rem;
-    
   }
-  
-  
-  h1 {
-  font-family: Play, sans-serif;
-  font-size: 2.5rem;
+
+  header h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    font-family: "Bungee", cursive;
   }
-  
-  main {
+
+  header img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
   }
-  
+
+  /* DIVS */
+
+  kbd {
+    font-size: 2rem;
+    font-family: "Bungee", cursive;
+  }
+
+  button {
+    background-color: transparent;
+    font-family: "Bungee", cursive;
+    font-size: 1rem;
+    border-radius: 5%;
+    color: rgb(40, 84, 104);
+    height: 3rem;
+    width: 7rem;
+    border: 4px solid rgb(40, 84, 104);
+    margin-top: 2rem;
+  }
+
+  button:hover {
+    background: rgb(40, 84, 104);
+    box-shadow: 0 0 80px rgb(40, 84, 104);
+    color: white;
+  }
+
   div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  
-  div p {
-    text-align: center;
-    color: #285468;
-    font-family: Play, sans-serif;
-    font-size: 0.85rem;
-  }
-  
-  footer {
-    height: 2rem;
-    background-color: #285468;
-    color: white;
-    display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    font-size: 0.65rem;
-    font-family: Play, sans-serif;
+    padding-top: 4rem;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: rgb(40, 84, 104);
+    color: white;
+    margin-bottom: 3.5rem;
   }
 
-  
+  div img {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*FOOTER*/
+  footer {
+    background: rgb(40, 84, 104);
+    padding: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
 }
