@@ -129,25 +129,72 @@ footer {
     font-family: Play, sans-serif;
   }
 
-  .move {
-    animation: dissapear 1;
-    animation-fill-mode: forwards;
-
-  }
-
-  @keyframes dissapear {
-    25% {
-      transform: scale(2);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
+  
 }
+
+
+@media (max-width: 365px) {
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 200px;
+    background-color: #dce6eb;
+  }
+  
+  
+  header {
+    height: 6rem;
+    background-color: #285468;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 1rem;
+    
+  }
+  
+  
+  h1 {
+  font-family: Play, sans-serif;
+  font-size: 1.5rem;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  div p {
+    text-align: center;
+    color: #285468;
+    font-family: Play, sans-serif;
+    font-size: 0.85rem;
+  }
+  
+  footer {
+    height: 2rem;
+    background-color: #285468;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    font-family: Play, sans-serif;
+  }
+}
+
+
+
