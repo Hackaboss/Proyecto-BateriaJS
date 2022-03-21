@@ -109,6 +109,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+// Set Timeout para retardar el sonido
 function play(sound) {
   setTimeout(() => {
     sound.play();

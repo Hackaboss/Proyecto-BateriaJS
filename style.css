@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-/*BODY*/
+/* VERSIÓN MÓVIL */
+
 body {
   background-color: rgb(182, 216, 233);
   display: flex;
@@ -13,9 +14,43 @@ body {
   height: 100vh;
 }
 
+/*HEADER*/
+header {
+  background-color: rgb(40, 84, 104);
+  height: 6rem;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  font-family: "Bungee", cursive;
+}
+
+header img {
+  width: 5rem;
+  height: 5rem;
+  padding-left: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* DIVS */
+
 kbd {
   font-size: 1.5rem;
-  justify-content: center;
   font-family: "Bungee", cursive;
 }
 
@@ -36,79 +71,135 @@ button:hover {
   color: white;
 }
 
-/*HEADER*/
-header {
-  background-color: rgb(40, 84, 104);
-  height: 11rem;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-header h1 {
-  padding: 2rem;
-  text-align: center;
-  font-size: 2rem;
-  color: white;
-  display: flex;
-  font-family: "Bungee", cursive;
-}
-
-header img {
-  width: 7rem;
-  height: 7rem;
-  padding-left: 1.5rem;
-}
-
-/*MAIN*/
-
-main {
-  padding: 2rem;
-}
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-div img {
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 4rem;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   background-color: rgb(40, 84, 104);
   color: white;
   margin-bottom: 3.5rem;
 }
 
+div img {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*FOOTER*/
 footer {
   background: rgb(40, 84, 104);
-  padding: 1rem;
-  text-align: center;
+  padding: 0.75rem;
   color: white;
   font-size: 0.8rem;
-}
-
-footer {
-  color: white;
-}
-
-footer p {
   font-family: sans-serif;
+}
+
+/* VERSIÓN ESCRITORIO */
+
+@media (min-width: 600px) {
+  body {
+    background-color: rgb(182, 216, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+
+  /*HEADER*/
+  header {
+    background-color: rgb(40, 84, 104);
+    height: 10rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    font-family: "Bungee", cursive;
+  }
+
+  header img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  /* DIVS */
+
+  kbd {
+    font-size: 2rem;
+    font-family: "Bungee", cursive;
+  }
+
+  button {
+    background-color: transparent;
+    font-family: "Bungee", cursive;
+    font-size: 1rem;
+    border-radius: 5%;
+    color: rgb(40, 84, 104);
+    height: 3rem;
+    width: 7rem;
+    border: 4px solid rgb(40, 84, 104);
+    margin-top: 2rem;
+  }
+
+  button:hover {
+    background: rgb(40, 84, 104);
+    box-shadow: 0 0 80px rgb(40, 84, 104);
+    color: white;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4rem;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    background-color: rgb(40, 84, 104);
+    color: white;
+    margin-bottom: 3.5rem;
+  }
+
+  div img {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*FOOTER*/
+  footer {
+    background: rgb(40, 84, 104);
+    padding: 1rem;
+    color: white;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+  }
 }
