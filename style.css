@@ -258,3 +258,7 @@ footer {
 footer {
   color: white;
 }
+
+footer p {
+  font-family: sans-serif;
+}
