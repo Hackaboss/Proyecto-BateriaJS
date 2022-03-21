@@ -2,78 +2,78 @@
 
 // Crash
 // Creamos el nuevo HTMLAudioElement
-const audioCrash = new Audio("./sounds/crash.wav");
+var audioCrash = new Audio("./sounds/crash.wav");
 
 // Creamos la constante crash y seleccionamos en el DOM el elemento correspondiente a crash
 const crash = document.querySelector("div:first-of-type");
 
 // Creamos un evento para que el sonido crash se ejecute cuando clicamos sobre él
 crash.addEventListener("click", (event) => {
-  play(audioCrash);
+  audioCrash.play();
 });
 
 // HiHat Close
-const audioHiHatClose = new Audio("./sounds/hihat-close.wav");
+var audioHiHatClose = new Audio("./sounds/hihat-close.wav");
 const hhClose = document.querySelector("div:nth-of-type(2)");
 
 hhClose.addEventListener("click", (event) => {
-  play(audioHiHatClose);
+  audioHiHatClose.play();
 });
 
 // HiHat Open
-const audioHiHatOpen = new Audio("./sounds/hihat-open.wav");
+var audioHiHatOpen = new Audio("./sounds/hihat-open.wav");
 const hhOpen = document.querySelector("div:nth-of-type(3)");
 
 hhOpen.addEventListener("click", (event) => {
-  play(audioHiHatOpen);
+  audioHiHatOpen.play();
 });
 
 // Kick
-const audioKick = new Audio("./sounds/kick.wav");
-const kick = document.querySelector("div:nth-of-type(7)");
+var audioKick = new Audio("./sounds/kick.wav");
+const kick = document.querySelector("div:nth-of-type(4)");
 
 kick.addEventListener("click", (event) => {
-  play(audioKick);
+  audioKick.play();
 });
 
 // Ride
-const audioRide = new Audio("./sounds/ride.wav");
-const ride = document.querySelector("div:nth-of-type(8)");
+var audioRide = new Audio("./sounds/ride.wav");
+const ride = document.querySelector("div:nth-of-type(5)");
 
 ride.addEventListener("click", (event) => {
-  play(audioRide);
+  audioRide.play();
 });
 
 // Snare
-const audioSnare = new Audio("./sounds/snare.wav");
+var audioSnare = new Audio("./sounds/snare.wav");
 const snare = document.querySelector("div:nth-of-type(6)");
 
 snare.addEventListener("click", (event) => {
-  play(audioSnare);
+  audioSnare.play();
 });
 
 // Tom High
-const audioTomHigh = new Audio("./sounds/tom-high.wav");
-const tomHigh = document.querySelector("div:nth-of-type(4)");
+var audioTomHigh = new Audio("./sounds/tom-high.wav");
+const tomHigh = document.querySelector("div:nth-of-type(7)");
 
 tomHigh.addEventListener("click", (event) => {
-  play(audioTomHigh);
+  audioTomHigh.play();
 });
 
 // Tom Mid
-const audioTomMid = new Audio("./sounds/tom-mid.wav");
-const tomMid = document.querySelector("div:nth-of-type(5)");
+var audioTomMid = new Audio("./sounds/tom-mid.wav");
+const tomMid = document.querySelector("div:nth-of-type(8)");
 
 tomMid.addEventListener("click", (event) => {
-  play(audioTomMid);
+  audioTomMid.play();
 });
 
 // Tom Low
-const audioTomLow = new Audio("./sounds/tom-low.wav");
+var audioTomLow = new Audio("./sounds/tom-low.wav");
 const tomLow = document.querySelector("div:last-of-type");
 
 tomLow.addEventListener("click", (event) => {
-  play(audioTomLow);
+  audioTomLow.play();
 });
 
 // Eventos de teclado
@@ -81,36 +81,30 @@ tomLow.addEventListener("click", (event) => {
 document.addEventListener("keydown", (event) => {
   // audioCrash.play(event);
   if (event.code === "KeyC") {
-    play(audioCrash);
+    audioCrash.play();
   }
   if (event.code === "KeyG") {
-    play(audioHiHatClose);
+    audioHiHatClose.play();
   }
   if (event.code === "KeyO") {
-    play(audioHiHatOpen);
+    audioHiHatOpen.play();
   }
   if (event.code === "KeyK") {
-    play(audioKick);
+    audioKick.play();
   }
   if (event.code === "KeyR") {
-    play(audioRide);
+    audioRide.play();
   }
   if (event.code === "KeyS") {
-    play(audioSnare);
+    audioSnare.play();
   }
   if (event.code === "KeyH") {
-    play(audioTomHigh);
+    audioTomHigh.play();
   }
   if (event.code === "KeyM") {
-    play(audioTomMid);
+    audioTomMid.play();
   }
   if (event.code === "KeyL") {
-    play(audioTomLow);
+    audioTomLow.play();
   }
 });
-
-function play(sound) {
-  setTimeout(() => {
-    sound.play();
-  }, 125);
-}
